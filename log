@@ -150,3 +150,13 @@ vi., 11 de mar. de 2022 17:42:00:
  tests:  1|6
 total_score: 10/70
 c9d82a1
+vi., 11 de mar. de 2022 17:58:13: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaNultimos':
+exercises.c:46:27: error: expected expression before ']' token
+  *suma= *suma- (sumaN ( a[], n));
+                           ^
+Compilation failed
+25058ff

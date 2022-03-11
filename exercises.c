@@ -39,10 +39,12 @@ Utilice la función sumaN.
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
  int i;
- *suma=0;
- for(i=(n);i<n+m;i++){
-    *suma+=a[i];
+ for (i=0; i<10 ; i++)
+ {
+    *suma += a[i];
  }
+ *suma= *suma- (sumaN ( a[], n));
+
 }
 
 /*
