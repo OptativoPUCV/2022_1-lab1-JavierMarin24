@@ -231,3 +231,9 @@ exercises.c:22:5: note: expected 'int *' but argument is of type 'int'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 059db14
+vi., 11 de mar. de 2022 19:19:43: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 20/70
+7955fbb
