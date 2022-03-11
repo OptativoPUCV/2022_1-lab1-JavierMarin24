@@ -160,3 +160,13 @@ exercises.c:46:27: error: expected expression before ']' token
                            ^
 Compilation failed
 25058ff
+vi., 11 de mar. de 2022 18:07:42: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaNultimos':
+exercises.c:47:21: error: expected expression before ']' token
+  total = sumaN ( *a[] , n);
+                     ^
+Compilation failed
+117619c
