@@ -176,3 +176,20 @@ vi., 11 de mar. de 2022 18:08:38:
  tests:  1|6
 total_score: 10/70
 3330db9
+vi., 11 de mar. de 2022 18:11:34: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaNultimos':
+exercises.c:47:14: error: passing argument 1 of 'sumaN' makes pointer from integer without a cast [-Werror=int-conversion]
+  suma-=sumaN(*a,n-m);
+              ^
+exercises.c:22:5: note: expected 'int *' but argument is of type 'int'
+ int sumaN(int a[], int N) {
+     ^~~~~
+exercises.c:42:6: error: unused variable 'total' [-Werror=unused-variable]
+  int total;
+      ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+7cf6d0b
