@@ -193,3 +193,9 @@ exercises.c:42:6: error: unused variable 'total' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 7cf6d0b
+vi., 11 de mar. de 2022 18:13:02: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  1|6
+total_score: 10/70
+d6276c3
