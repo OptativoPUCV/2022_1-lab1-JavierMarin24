@@ -718,3 +718,29 @@ c:\mingw\include\stdlib.h:484:40: note: declared here
                                         ^~~~~~
 Compilation failed
 9adfe11
+vi., 11 de mar. de 2022 23:47:17: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearVector':
+exercises.c:89:25: error: too few arguments to function 'calloc'
+    *arreglo = (Vector ) calloc  (sizeof(Vector)));
+                         ^~~~~~
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:484:40: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *calloc (size_t, size_t) __MINGW_ATTRIB_MALLOC;
+                                        ^~~~~~
+In file included from test.c:5:0:
+exercises.c:89:49: error: expected ';' before ')' token
+    *arreglo = (Vector ) calloc  (sizeof(Vector)));
+                                                 ^
+exercises.c:89:49: error: expected statement before ')' token
+exercises.c:90:29: error: too few arguments to function 'calloc'
+    *arreglo->datos = (int ) calloc ((sizeof(int)));
+                             ^~~~~~
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:484:40: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *calloc (size_t, size_t) __MINGW_ATTRIB_MALLOC;
+                                        ^~~~~~
+Compilation failed
+f6e6e19
