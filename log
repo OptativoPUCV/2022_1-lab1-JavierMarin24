@@ -780,3 +780,13 @@ c:\mingw\include\stdlib.h:484:40: note: declared here
                                         ^~~~~~
 Compilation failed
 40df9b9
+sá., 12 de mar. de 2022  0:24:10: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearVector':
+exercises.c:91:23: error: invalid type argument of unary '*' (have 'int')
+    arreglo->capacidad=*n;
+                       ^~
+Compilation failed
+4c16b20

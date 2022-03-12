@@ -86,9 +86,9 @@ typedef struct {
 Vector * crearVector(int n) {
    //frases = (tipoLetra *) realloc (frases, n+1 * sizeof(tipoLetra));
    Vector *arreglo = NULL;
-   arreglo = (Vector *) calloc  (sizeof(Vector));
+   arreglo = (Vector *) malloc  (sizeof(Vector));
    arreglo->datos = (int * ) calloc (n,(sizeof(int)));
-   arreglo->capacidad=n;
+   arreglo->capacidad=*n;
    return arreglo;
 }
 
