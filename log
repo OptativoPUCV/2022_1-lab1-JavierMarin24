@@ -587,3 +587,17 @@ c:\mingw\include\stdlib.h:484:40: note: declared here
                                         ^~~~~~
 Compilation failed
 0312b28
+vi., 11 de mar. de 2022 23:34:56: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearVector':
+exercises.c:90:31: error: too few arguments to function 'calloc'
+    *arreglo->datos = (int *) *calloc (n*(sizeof(int)));
+                               ^~~~~~
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:484:40: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *calloc (size_t, size_t) __MINGW_ATTRIB_MALLOC;
+                                        ^~~~~~
+Compilation failed
+b775bc2
