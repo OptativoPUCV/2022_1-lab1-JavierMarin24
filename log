@@ -859,3 +859,13 @@ exercises.c:101:6: error: expected identifier before '*' token
       ^
 Compilation failed
 e8f7c5b
+sá., 12 de mar. de 2022 14:57:37: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'asignarValor':
+exercises.c:101:15: error: subscripted value is neither array nor pointer nor vector
+   v->capacidad[i]=valor;
+               ^
+Compilation failed
+f361372
