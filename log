@@ -447,3 +447,17 @@ exercises.c:90:11: error: function returns address of local variable [-Werror=re
 cc1.exe: all warnings being treated as errors
 Compilation failed
 1827273
+vi., 11 de mar. de 2022 22:47:26: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearVector':
+exercises.c:89:11: error: assignment to expression with array type
+    arreglo= (Vector *) realloc (arreglo, n * (sizeof(Vector)));
+           ^
+exercises.c:90:11: error: function returns address of local variable [-Werror=return-local-addr]
+    return arreglo;
+           ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+fe7a28b
