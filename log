@@ -917,3 +917,25 @@ exercises.c:123:19: error: invalid type argument of '->' (have 'Vector {aka stru
                    ^~
 Compilation failed
 2ffc70f
+sá., 12 de mar. de 2022 17:12:01: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV':
+exercises.c:120:6: error: invalid type argument of '->' (have 'Vector {aka struct <anonymous>}')
+ *suma->datos = a->datos + b->datos;
+      ^~
+exercises.c:120:25: error: invalid operands to binary + (have 'int *' and 'int *')
+ *suma->datos = a->datos + b->datos;
+                ~~~~~~~~ ^ ~~~~~~~~
+exercises.c:121:6: error: invalid type argument of '->' (have 'Vector {aka struct <anonymous>}')
+ *suma->capacidad= a->capacidad + b->capacidad;
+      ^~
+exercises.c:122:14: error: invalid type argument of '->' (have 'Vector {aka struct <anonymous>}')
+ c->datos=suma->datos;
+              ^~
+exercises.c:123:19: error: invalid type argument of '->' (have 'Vector {aka struct <anonymous>}')
+ c->capacidad= suma->capacidad;
+                   ^~
+Compilation failed
+e3507e9
