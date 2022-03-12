@@ -881,3 +881,17 @@ sá., 12 de mar. de 2022 15:04:06:
  tests:  6|2
 total_score: 50/70
 c493575
+sá., 12 de mar. de 2022 17:09:21: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV':
+exercises.c:120:9: error: invalid operands to binary + (have 'Vector * {aka struct <anonymous> *}' and 'Vector * {aka struct <anonymous> *}')
+ suma= a + b;
+         ^
+exercises.c:121:2: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+ c= suma;
+  ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+46e142b
