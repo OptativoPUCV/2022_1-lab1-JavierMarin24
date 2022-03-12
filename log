@@ -1137,3 +1137,34 @@ exercises.c:118:6: note: expected 'Vector * {aka struct <anonymous> *}' but argu
       ^~~~~
 Compilation failed
 12565c9
+sá., 12 de mar. de 2022 17:38:14: 
+ exercises.c | 18 +++++++++---------
+ 1 file changed, 9 insertions(+), 9 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV2':
+exercises.c:136:5: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+     *arregloA=crearVector(2);
+     ^~~~~~~~~
+exercises.c:138:3: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+   *arregloB=crearVector(2);
+   ^~~~~~~~~
+exercises.c:139:19: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+    asignarValor(  *arregloA,  0,  a1);
+                   ^~~~~~~~~
+exercises.c:140:19: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+    asignarValor(  *arregloA,  1,  a2);
+                   ^~~~~~~~~
+exercises.c:141:19: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+    asignarValor(  *arregloB,  0,  b1);
+                   ^~~~~~~~~
+exercises.c:142:19: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+    asignarValor(  *arregloB,  1,  b2);
+                   ^~~~~~~~~
+exercises.c:143:11: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+    sumaV( *arregloA,   *arregloB,  c);
+           ^~~~~~~~~
+exercises.c:143:24: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+    sumaV( *arregloA,   *arregloB,  c);
+                        ^~~~~~~~~
+Compilation failed
+cba2205
