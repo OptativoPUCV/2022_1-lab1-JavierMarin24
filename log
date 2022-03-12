@@ -307,3 +307,55 @@ exercises.c:71:1: error: control reaches end of non-void function [-Werror=retur
 cc1.exe: all warnings being treated as errors
 Compilation failed
 47e46e6
+vi., 11 de mar. de 2022 22:00:21: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:66:13: error: redeclaration of 'perfil' with no linkage
+    Persona* perfil = (Persona*) malloc (sizeof(Persona));
+             ^~~~~~
+exercises.c:65:13: note: previous declaration of 'perfil' was here
+    Persona *perfil;
+             ^~~~~~
+exercises.c:67:12: error: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+    strcpy( *perfil->nombre,  *nombre);
+            ^
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+In file included from test.c:5:0:
+exercises.c:67:30: error: passing argument 2 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+    strcpy( *perfil->nombre,  *nombre);
+                              ^
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+In file included from test.c:5:0:
+exercises.c:68:12: error: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+    strcpy( *perfil->rut,  *rut);
+            ^
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+In file included from test.c:5:0:
+exercises.c:68:27: error: passing argument 2 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+    strcpy( *perfil->rut,  *rut);
+                           ^
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+In file included from test.c:5:0:
+exercises.c:70:11: error: incompatible types when returning type 'Persona {aka struct <anonymous>}' but 'Persona * {aka struct <anonymous> *}' was expected
+    return *perfil;
+           ^~~~~~~
+exercises.c:71:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+00139d7
