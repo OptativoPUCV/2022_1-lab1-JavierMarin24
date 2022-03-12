@@ -87,8 +87,8 @@ Vector * crearVector(int n) {
    //frases = (tipoLetra *) realloc (frases, n+1 * sizeof(tipoLetra));
    Vector *arreglo = NULL;
    arreglo = (Vector *) realloc (arreglo,  (sizeof(Vector)));
-   arreglo->datos = (int *) realloc(arreglo->datos, n*(sizeof(int)));
-   //arreglo->capacidad=n;
+   arreglo->datos = (int *) calloc(n*(sizeof(int)));
+   arreglo->capacidad=n;
    return arreglo;
 }
 
