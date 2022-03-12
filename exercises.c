@@ -62,20 +62,12 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   Persona perfil;
-   int i;
-   for (i=0; i<30 ; i++)
-   {
-      scanf("%c", &perfil.nombre[i]);
-      
-   }
-   for(i=0; i<11 ;i++)
-   {
-      scanf("%c", &perfil.rut[i]);
-   }
-   scanf("%d", &edad);
-   
-   return perfil;
+   Persona *perfil;
+   Persona* perfil = (Persona*) malloc (sizeof(Persona));
+   strcpy( *perfil->nombre,  *nombre);
+   strcpy( *perfil->rut,  *rut);
+   *perfil->edad=edad;
+   return *persona;
 }
 
 /*
