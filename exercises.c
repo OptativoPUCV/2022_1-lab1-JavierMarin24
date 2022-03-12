@@ -88,7 +88,7 @@ Vector * crearVector(int n) {
    Vector *arreglo = NULL;
    arreglo = (Vector *) realloc (arreglo,  (sizeof(Vector)));
    *arreglo->datos = (int *) calloc ((sizeof(int)));
-   *arreglo->capacidad=n;
+   arreglo.capacidad=n;
    return arreglo;
 }
 
