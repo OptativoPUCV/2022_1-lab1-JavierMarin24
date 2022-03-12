@@ -461,3 +461,20 @@ exercises.c:90:11: error: function returns address of local variable [-Werror=re
 cc1.exe: all warnings being treated as errors
 Compilation failed
 fe7a28b
+vi., 11 de mar. de 2022 22:47:58: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearVector':
+exercises.c:89:12: error: assignment to expression with array type
+    arreglo = (Vector *) realloc (arreglo, n * (sizeof(Vector)));
+            ^
+exercises.c:90:11: error: incompatible types when returning type 'Vector {aka struct <anonymous>}' but 'Vector * {aka struct <anonymous> *}' was expected
+    return *arreglo;
+           ^~~~~~~~
+exercises.c:91:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+4c3cb73
