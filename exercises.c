@@ -136,9 +136,9 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
     arregloA=crearVector(2);
    Vector *arregloB;
    arregloB=crearVector(2);
-   asignarValor(Vector * arregloA, int 0, int a0);
-   asignarValor(Vector * arregloA, int 1, int a1);
-   asignarValor(Vector * arregloB, int 0, int b0);
-   asignarValor(Vector * arregloB, int 1, int b1);
-   sumaV(Vector * arregloA, Vector * arregloB, Vector * c);
+   asignarValor( * arregloA, int 0, int a0);
+   asignarValor( * arregloA, int 1, int a1);
+   asignarValor( * arregloB, int 0, int b0);
+   asignarValor( * arregloB, int 1, int b1);
+   sumaV(* arregloA,  * arregloB, * c);
 }
