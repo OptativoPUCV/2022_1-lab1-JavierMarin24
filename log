@@ -652,3 +652,17 @@ exercises.c:91:11: error: 'arreglo' is a pointer; did you mean to use '->'?
            ->
 Compilation failed
 ad93b85
+vi., 11 de mar. de 2022 23:45:52: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearVector':
+exercises.c:90:29: error: too few arguments to function 'calloc'
+    arreglo->datos = (int *) calloc ((sizeof(int)));
+                             ^~~~~~
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:484:40: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *calloc (size_t, size_t) __MINGW_ATTRIB_MALLOC;
+                                        ^~~~~~
+Compilation failed
+c43f301
