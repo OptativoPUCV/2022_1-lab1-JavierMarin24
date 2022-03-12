@@ -133,12 +133,12 @@ sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
    Vector arregloA;
-    *arregloA=crearVector(2);
+    arregloA=*crearVector(2);
    Vector arregloB;
-  *arregloB=crearVector(2);
-   asignarValor(  *arregloA,  0,  a1);
-   asignarValor(  *arregloA,  1,  a2);
-   asignarValor(  *arregloB,  0,  b1);
-   asignarValor(  *arregloB,  1,  b2);
-   sumaV( *arregloA,   *arregloB,  c);
+  arregloB=*crearVector(2);
+   asignarValor(  &arregloA,  0,  a1);
+   asignarValor(  &arregloA,  1,  a2);
+   asignarValor(  &arregloB,  0,  b1);
+   asignarValor(  &arregloB,  1,  b2);
+   sumaV( &arregloA,   &arregloB,  c);
 }

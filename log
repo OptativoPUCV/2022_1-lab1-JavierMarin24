@@ -1168,3 +1168,9 @@ exercises.c:143:24: error: invalid type argument of unary '*' (have 'Vector {aka
                         ^~~~~~~~~
 Compilation failed
 cba2205
+sá., 12 de mar. de 2022 17:39:56: 
+ exercises.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+ tests:  8|0
+total_score: 70/70
+40bacf0
