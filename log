@@ -828,3 +828,13 @@ sá., 12 de mar. de 2022 14:50:14:
  tests:  4|3
 total_score: 40/70
 4312069
+sá., 12 de mar. de 2022 14:54:32: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'asignarValor':
+exercises.c:101:3: error: invalid type argument of unary '*' (have 'int')
+   *v->datos[i]=valor;
+   ^~~~~~~~~~~~
+Compilation failed
+e00c774
