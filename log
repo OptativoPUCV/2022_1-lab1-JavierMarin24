@@ -895,3 +895,25 @@ exercises.c:121:2: error: assignment makes pointer from integer without a cast [
 cc1.exe: all warnings being treated as errors
 Compilation failed
 46e142b
+sá., 12 de mar. de 2022 17:11:25: 
+ exercises.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV':
+exercises.c:120:5: error: invalid type argument of '->' (have 'Vector {aka struct <anonymous>}')
+ suma->datos = a->datos + b->datos;
+     ^~
+exercises.c:120:24: error: invalid operands to binary + (have 'int *' and 'int *')
+ suma->datos = a->datos + b->datos;
+               ~~~~~~~~ ^ ~~~~~~~~
+exercises.c:121:5: error: invalid type argument of '->' (have 'Vector {aka struct <anonymous>}')
+ suma->capacidad= a->capacidad + b->capacidad;
+     ^~
+exercises.c:122:14: error: invalid type argument of '->' (have 'Vector {aka struct <anonymous>}')
+ c->datos=suma->datos;
+              ^~
+exercises.c:123:19: error: invalid type argument of '->' (have 'Vector {aka struct <anonymous>}')
+ c->capacidad= suma->capacidad;
+                   ^~
+Compilation failed
+2ffc70f
