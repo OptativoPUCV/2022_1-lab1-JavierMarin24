@@ -84,7 +84,10 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   return NULL;
+   //frases = (tipoLetra *) realloc (frases, n+1 * sizeof(tipoLetra));
+   Vector arreglo[n];
+   arreglo= (Vector *) realloc (Vector, n * (sizeof(Vector)));
+   return arreglo;
 }
 
 /*

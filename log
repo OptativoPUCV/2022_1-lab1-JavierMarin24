@@ -425,3 +425,25 @@ vi., 11 de mar. de 2022 22:05:46:
  tests:  3|4
 total_score: 30/70
 de64baa
+vi., 11 de mar. de 2022 22:46:35: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearVector':
+exercises.c:89:33: error: expected expression before 'Vector'
+    arreglo= (Vector *) realloc (Vector, n * (sizeof(Vector)));
+                                 ^~~~~~
+exercises.c:89:24: error: too few arguments to function 'realloc'
+    arreglo= (Vector *) realloc (Vector, n * (sizeof(Vector)));
+                        ^~~~~~~
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:486:40: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  void *realloc (void *, size_t);
+                                        ^~~~~~~
+In file included from test.c:5:0:
+exercises.c:90:11: error: function returns address of local variable [-Werror=return-local-addr]
+    return arreglo;
+           ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+1827273
