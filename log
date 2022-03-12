@@ -806,3 +806,13 @@ exercises.c:101:7: error: incompatible types when assigning to type 'Vector {aka
        ^
 Compilation failed
 3f0f5eb
+sá., 12 de mar. de 2022 14:45:21: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'asignarValor':
+exercises.c:101:3: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+   *v[i]=valor;
+   ^~~~~
+Compilation failed
+cca3fef
